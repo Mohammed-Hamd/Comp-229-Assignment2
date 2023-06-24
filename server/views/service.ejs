@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="shortcut icon" type="image/x-icon" href="/Assets/images/logo.jpg" />
+    <% title="Services"; %> 
+    <%- include partials/header.ejs %>
+
+    <%- include partials/main_nav.ejs %>
+    <style>
+      body {
+          background-color: rgba(255, 255, 255, 0.902);
+        }
+        </style>
+        <style>
+        h1 {text-align: center;}
+        p {text-align: center;}
+        div {text-align: left;}
+  
+        
+  </style>
+    
+</head>
+<body>
+
+    <main class="container-md bg-success text-white">
+    
+      <div>
+      <h1 class="display-4">Welcome to the <%= title %> page</h1>    
+          
+        </div>   
+        
+      </main>
+
+      <br>
+      <br>
+      <div class="container-md bg-success rounded-4 text-white">
+      
+        <h2>Services</h2>
+        <br>
+        
+        <div class="row">
+          <div class="col-md-4">
+            <div class="thumbnail">
+              <a href="/Assets/images/DMS.jpg" style="color: aliceblue;"target="_blank">
+                <img src="/Assets/images/DMS.jpg" alt="Lights" style="width:100%">
+                <div class="caption">
+                  <ul>
+                    <li>Affiliate Marketing</li>
+                    <li>SEO</li>
+                    <li>Advertising</li>
+                    <li>Market analysis</li>
+                    <li>Content Marketing</li>
+                    <li>Branding</li>
+                  </ul> 
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail">
+              <a href="/Assets/images/WDSL.png" style="color: aliceblue;"target="_blank">
+                <img src="/Assets/images/WDSL.png" alt="Nature" style="width:100%">
+                <div class="caption">
+                  <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JAVASCRIPT</li>
+                    <li>PHP</li>
+                  </ul>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail">
+              <a href="/Assets/images/PLSL.jpg" style="color: aliceblue;" target="_blank">
+                <img src="/Assets/images/PLSL.jpg" alt="Fjords" style="width:100%">
+                <div class="caption">
+                  <ul>
+                    <li>JAVA</li>
+                    <li>C#</li>
+                    <li>Python</li>
+                    <li>Software testing</li>
+                  </ul>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</body>
+<footer>
+  <%- include partials/bottom_nav.ejs %>
+</footer> 
+    
+    
+</head>

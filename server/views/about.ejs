@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" type="image/x-icon" href="/Assets/images/logo.jpg" />
+    <% title="About"; %> 
+    <%- include partials/main_nav %>
+    <%- include partials/header %>
+    <style>
+    body {
+        background-color: rgb(255, 255, 255);
+    }
+    h1 {
+        text-align: center;
+    }
+    p {
+        text-align: center;
+    }
+    div {
+        text-align: center;
+    }
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    </style>
+</head>
+<body>
+    <main class="container-md bg-success text-white">
+        <div>
+            <h1 class="display-4">Welcome to the <%= title %> page</h1>     
+        </div>   
+    </main>
+    <br>
+    <main>
+        <h2 style="text-align:center">Mission Statement</h2>
+        <div class="row" style="display: flex; justify-content: center;">
+            <div class="column">
+                <div class="card">
+                    <img src="pic1.jpeg" alt="" style="width:100%">
+                    <br><br>
+                    <div class="container">
+                        <h2>Get To Know Me</h2>
+                        <p>I'm Mohammed Hamd! A Software Engineer student at Centennial College with a Bachelor's degree in Marketing I have been in the marketing field for several years, and now I'm enjoying my new
+                          field as a student of software engineering. I started my online business as a seller on Shopify 
+                          and Amazon during COVID. It made me get into web design and, as a father of two now, I get to enjoy
+                           spending time with my kids and family while studying and managing my business! </p>
+                        <p>mhamd@my.centennialcollege.ca</p>
+                        <div class="btn-group btn-group-justified">
+                            <a href="/Assets/images/Resume.pdf" class="btn btn-success">Resume</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <br>
+    <br>
+    <img src="/Assets/images/profilepic.jpg" class="center" alt="" width="304" height="236">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</body>
+<footer>
+    <%- include partials/bottom_nav %>
+</footer> 
+</html>
